@@ -1,4 +1,5 @@
 /* eslint-disable arrow-body-style */
+import 'reflect-metadata';
 import express from 'express';
 import routes from './routes';
 
