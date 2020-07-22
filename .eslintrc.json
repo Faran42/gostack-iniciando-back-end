@@ -25,6 +25,8 @@
   "rules": {
     "prettier/prettier": "error",
     "class-methods-use-this": "off",
+    "camelcase": "off",
+    "@typescript-eslint/camelcase": "off",
     "import/extensions": [
       "error",
       "ignorePackages",
@@ -32,15 +34,15 @@
         "ts": "never"
       }
     ],
-    "no-unused-vars": ["error", { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }]
+    "no-unused-vars": "off"//["error", { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }]
   },
   "settings": {
     "import/resolver": {
-      "typescript": {}
-    /*"node": {
+      "typescript": {},
+      "node": {
       "extensions": [".js", ".jsx", ".ts", ".tsx"],
       "moduleDirectory": ["node_modules", "src/"]
-    }*/
+      }
     }
   }
 }
